@@ -46,7 +46,6 @@ namespace TodoList.Api.Controllers
         //}
 
         [HttpPost("")]
-        [Authorize]
         public IActionResult PostInscribirUsuario(UsuariosModel model)
         {
             var data = _mapper.Map<UsuariosDTO>(model);
